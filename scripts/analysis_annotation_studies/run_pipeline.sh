@@ -1,0 +1,15 @@
+# assign annotators for device summaries
+python assign_annotators_device_summaries.py
+# assign annotators for MDRs
+python assign_annotators_mdr.py
+
+# running comparison between LLM and our own annotations -- device summaries
+python summarize_annotation_results.py --llm_extract ../analysis_validation/output/aiml_devices_validation_results.jsonl ../analysis_pre_post_associations/output/aiml_device_results.jsonl --annotation annotated_data/annotator1_xiao.csv annotated_data/annotator2_patrick.csv annotated_data/annotator3_jean.csv annotated_data/annotator4_adarsh_modified.csv --agreement annotated_data/annotator3_jean.csv annotated_data/annotator4_adarsh_modified.csv --results output/annotation_validation_results_new.csv
+# running comparison between rule-based extractions and our own annotations -- device summaries
+python summarize_annotation_results.py --all-attrs is_prospective is_multisite human_device_team_testing has_clinical_testing intended_use_and_clinical_applications operational_and_workflow_change algorithm_or_software_feature_changes hardware_changes body_part_changes --llm_extract ../analysis_validation/output/aiml_device_rule_extractions.jsonl --annotation annotated_data/annotator1_xiao.csv annotated_data/annotator2_patrick.csv annotated_data/annotator3_jean.csv annotated_data/annotator4_adarsh_modified.csv --agreement annotated_data/annotator3_jean.csv annotated_data/annotator4_adarsh_modified.csv --results output/annotation_vs_rule_based.csv
+
+# running comparison between LLM and our own annotations -- MDRs
+python summarize_annotation_results_mdr.py --annotation annotated_data/mdr_annotator1_xiao.csv annotated_data/mdr_annotator2_patrick.csv annotated_data/mdr_annotator3_jean.csv annotated_data/mdr_annotator4_adarsh.csv annotated_data/mdr_annotator5_extra.csv --random-orderings output/mdr_annotator1_xiao_random_orderings.csv output/mdr_annotator2_patrick_random_orderings.csv output/mdr_annotator3_jean_random_orderings.csv output/mdr_annotator4_adarsh_random_orderings.csv output/mdr_annotator5_extra_random_orderings.csv --results output/annotation_validation_results_mdr.csv
+# running comparison between rule-based extractions and our own annotations
+python summarize_annotation_results_mdr_agreements.py --extraction-key rule_analysis --event-type-extract ../analysis_ae_recall/output/adverse_events_analysis_results_event_rules.json --annotation annotated_data/mdr_annotator1_xiao.csv annotated_data/mdr_annotator2_patrick.csv annotated_data/mdr_annotator3_jean.csv annotated_data/mdr_annotator4_adarsh.csv annotated_data/mdr_annotator5_extra.csv --results output/annotation_validation_results_mdr_rules.csv
+python summarize_annotation_results_mdr_agreements.py  --extraction-key llm_analysis --event-type-extract ../analysis_ae_recall/output/adverse_events_analysis_results_event_prob_rebuttal_names.json --annotation annotated_data/mdr_annotator1_xiao.csv annotated_data/mdr_annotator2_patrick.csv annotated_data/mdr_annotator3_jean.csv annotated_data/mdr_annotator4_adarsh.csv annotated_data/mdr_annotator5_extra.csv --results output/annotation_validation_results_mdr_llm.csv
