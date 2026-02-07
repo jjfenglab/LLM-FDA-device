@@ -2,6 +2,9 @@
 
 This repository contains the code and analysis pipeline for
 
+[figure1.pdf](https://github.com/user-attachments/files/25152314/figure1.pdf)
+
+
 **Hanyang Li, Xiao He, Adarsh Subbaswamy, Patrick Vossler, Alexej Gossmann, Karandeep Singh & Jean Feng. Scaling medical device regulatory science using large language models. npj Digital Medicine (2026).** https://doi.org/10.1038/s41746-026-02353-7
 
 ## Overview
