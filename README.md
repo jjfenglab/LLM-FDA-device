@@ -2,7 +2,7 @@
 
 This repository contains the code and analysis pipeline for
 
-<img width="1017" height="307" alt="LLM pipeline" src="https://github.com/jjfenglab/LLM-FDA-device/blob/main/figure1.pdf" />
+<img width="1017" height="307" alt="LLM pipeline" src="https://github.com/jjfenglab/LLM-FDA-device/blob/main/figure1.png" />
 
 **Hanyang Li, Xiao He, Adarsh Subbaswamy, Patrick Vossler, Alexej Gossmann, Karandeep Singh & Jean Feng. Scaling medical device regulatory science using large language models. npj Digital Medicine (2026).** https://doi.org/10.1038/s41746-026-02353-7
 
