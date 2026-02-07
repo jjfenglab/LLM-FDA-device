@@ -1,10 +1,9 @@
 <h1 align="center">Scaling Medical Device Regulatory Science using Large Language Models</h1> 
 
 This repository contains the code and analysis pipeline for
+**Hanyang Li, Xiao He, Adarsh Subbaswamy, Patrick Vossler, Alexej Gossmann, Karandeep Singh & Jean Feng. Scaling medical device regulatory science using large language models. npj Digital Medicine (2026).** https://doi.org/10.1038/s41746-026-02353-7
 
 <img height="307" alt="LLM pipeline" src="https://github.com/jjfenglab/LLM-FDA-device/blob/main/figure1.png" />
-
-**Hanyang Li, Xiao He, Adarsh Subbaswamy, Patrick Vossler, Alexej Gossmann, Karandeep Singh & Jean Feng. Scaling medical device regulatory science using large language models. npj Digital Medicine (2026).** https://doi.org/10.1038/s41746-026-02353-7
 
 ## Overview
 
