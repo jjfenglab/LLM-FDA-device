@@ -2,7 +2,13 @@
 
 This repository contains the code and analysis pipeline for
 
-![figure1.pdf](figure1.pdf)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/license-mit-green.svg">
+  <img src="https://img.shields.io/badge/python-3.7+-blue">
+</p>  
+
+<img width="1017" height="307" alt="LLM pipeline" src="[https://github.com/user-attachments/assets/9055db26-1c3f-4420-a37a-b1c08f3a7197](https://github.com/user-attachments/files/25152341/figure1.pdf)" />
 
 
 **Hanyang Li, Xiao He, Adarsh Subbaswamy, Patrick Vossler, Alexej Gossmann, Karandeep Singh & Jean Feng. Scaling medical device regulatory science using large language models. npj Digital Medicine (2026).** https://doi.org/10.1038/s41746-026-02353-7
