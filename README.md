@@ -19,7 +19,7 @@ This work develops and validates an LLM-based pipeline for scaling data analyses
   - `FDA-CDRH_NCIt_Subsets.csv` - FDA medical device terminology/classification data
   - Other relevant datasets can be downloaded using the provided scripts
 
-- **`scripts/`**: Core analysis pipeline (~6,489 lines of Python code)
+- **`scripts/`**: Core analysis pipeline
   - `common.py` - Shared utilities for data processing and analysis
   - `download_device_pdfs.py` - FDA API integration for downloading device summaries
   - Each case study corresponds to a folder:
