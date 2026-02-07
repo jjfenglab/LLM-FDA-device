@@ -22,51 +22,14 @@ This work develops and validates an LLM-based pipeline for scaling data analyses
 - **`scripts/`**: Core analysis pipeline (~6,489 lines of Python code)
   - `common.py` - Shared utilities for data processing and analysis
   - `download_device_pdfs.py` - FDA API integration for downloading device summaries
-
+  - Each case study corresponds to a folder:
+     1. Device Validation Practices: `scripts/analysis_validation/`
+     2. MDR coding: `scripts/analysis_ae_recall/`
+     3. Pre-Market Risk Factors: `scripts/analysis_pre_post_associations/`
 - **`scripts/utils/`**: Utility modules
   - `gpt_utils.py` - OpenAI API integration with cost tracking for multiple GPT models
   - `pdf_utils.py` - PDF text extraction with OCR fallback for poor quality documents
   - `extract_primary_predicate.py` - Regex-based extraction of device predicate information
-
-### Analysis Workflows
-
-Each analysis module contains a complete pipeline with shell script orchestration:
-
-#### 1. **Validation Analysis** (`scripts/analysis_validation/`)
-- Surveys device validation practices across all AI/ML devices (1995-2025)
-- Compares LLM extractions with previous manual studies
-- Identifies trends in prospective vs. retrospective studies and multi-site evaluations
-
-#### 2. **Annotation Studies** (`scripts/analysis_annotation_studies/`)
-- Validates LLM extractions against expert human annotations
-- Measures inter-rater agreement between human annotators
-- Compares LLM vs. human performance on device summaries and MDRs
-
-#### 3. **Pre/Post-Market Associations** (`scripts/analysis_pre_post_associations/`)
-- Links pre-market device characteristics to post-market adverse events
-- Uses Cox proportional hazards models for survival analysis
-- Identifies risk factors associated with higher rates of adverse events
-
-#### 4. **Adverse Event & Recall Analysis** (`scripts/analysis_ae_recall/`)
-- Categorizes adverse events using LLM-based Medical Device Problem codes
-- Compares LLM vs. vendor-assigned event classifications
-- Uses "LLM-as-a-judge" validation with multiple models (GPT-4.1, Claude Sonnet)
-
-## Technical Architecture
-
-### LLM Pipeline
-- **Primary Model**: GPT-4.1 from OpenAI for information extraction
-- **Validation Models**: Claude Sonnet 4.5 for LLM-as-a-judge validation
-- **Structured Prompts**: In-context learning with regulatory examples
-- **Temperature**: Set to 0 for reproducible results
-- **Error Handling**: OCR fallback for poor quality PDF documents
-
-### Data Processing Flow
-1. **Data Collection**: FDA APIs (MAUDE database, Recall API, Decision Summaries)
-2. **Preprocessing**: PDF text extraction with OCR backup using tesseract
-3. **LLM Extraction**: Structured information extraction with GPT-4.1
-4. **Validation**: Human expert annotation and LLM-as-a-judge comparison
-5. **Statistical Analysis**: Cox models, survival analysis, trend visualization
 
 ## Getting Started
 
