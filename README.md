@@ -40,21 +40,7 @@ pip install -r requirements.txt
 
 ### Running the Analysis Pipelines
 
-Each analysis workflow can be executed via its pipeline script:
-
-```bash
-# Validation analysis
-cd scripts/analysis_validation && ./run_pipeline.sh
-
-# Annotation studies
-cd scripts/analysis_annotation_studies && ./run_pipeline.sh
-
-# Pre/post-market associations
-cd scripts/analysis_pre_post_associations && ./run_pipeline.sh
-
-# Adverse event analysis
-cd scripts/analysis_ae_recall && ./run_pipeline.sh
-```
+Each analysis workflow can be executed by running `run_pipeline.sh` within its respective folder
 
 ### Configuration
 
