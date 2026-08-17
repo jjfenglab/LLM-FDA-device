@@ -5,6 +5,8 @@ This repository contains the code and analysis pipeline for
 
 <img height="307" alt="LLM pipeline" src="https://github.com/jjfenglab/LLM-FDA-device/blob/main/figure1.png" />
 
+If you are interested in searching in our database, please <a href="https://urldefense.com/v3/__https://happy-reggy.vercel.app/__;!!LQC6Cpwp!rqvMXvfKGAean6i3HTGHMQvm515l-VsSi9VUdzUMDPojExRfI_DYoZdfR0475G2uQTL_Sr34Y2IXiarAZxUJ$">check it out here!</a>
+
 ## Overview
 
 This work develops and validates an LLM-based pipeline for scaling data analyses in medical device regulatory science. We demonstrate how LLMs can accurately extract structured information from complex, unstructured FDA regulatory documents in three case studies:
